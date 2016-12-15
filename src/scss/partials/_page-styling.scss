@@ -1,0 +1,23 @@
+.page-styling {
+	width: 80%;
+	margin: 0 auto;
+	@media all and (max-width: 480px) {
+		width: 85%;
+		padding-bottom: 20px;
+		font-size: 15px;
+	}		
+}
+
+.close-image {
+	background: url("../images/close.png");
+	height: 50px;
+	width: 50px;
+	background-repeat: no-repeat;
+	margin: -10% 0 5% 2%;
+	cursor: pointer;
+	@media all and (max-width: 480px) {
+		float: right;
+		margin: -35px 8px 0 0;
+	}	
+}
+

@@ -1,0 +1,38 @@
+$some-green: #75C398;
+
+.footer {
+	width: 56px;
+	height: 100vh;
+	background-color: $some-green;
+	box-shadow:10px 0px $some-green;
+	position: relative;
+	float: left;
+	a{
+		text-decoration: none;
+	}
+}
+
+.footer-icons {
+    clear: both;
+    display: block;
+    text-align: center;
+    padding-top: 15%;
+}
+
+.icons-size {
+	width:30px;
+	height:30px;
+}
+
+.ftsf-logo{
+	padding-top:50px;
+	position: absolute;
+	margin-left: 3px;
+    bottom: 7vh;
+    width:50px;
+    height:45px;
+}
+
+.footer-alignment{
+	margin:0 14px;
+}

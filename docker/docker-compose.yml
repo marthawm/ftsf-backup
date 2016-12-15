@@ -1,0 +1,19 @@
+mysql:    
+    image: mysql:5.7
+    environment:
+     - MYSQL_ROOT_PASSWORD=fairtrade
+    volumes:
+     - data:/var/lib/mysql
+    ports:
+     - 3306:3306
+wordpress:
+    image: wordpress
+    links:
+     - mysql
+    environment:
+     - DB_PASS=fairtrade
+    working_dir: /var/www/html
+    volumes:
+     - /VM_share:/var/www/html/wp-content
+    ports:
+     - 8080:80

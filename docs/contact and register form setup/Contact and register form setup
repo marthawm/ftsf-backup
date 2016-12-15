@@ -1,0 +1,13 @@
+## Contact and register form setup
+
+To set up the forms for the contact section and the register project section you'll use the Contact Form 7 plugin.
+
+1. 	Install, if this hasn't been done yet, the Contact Form 7 plugin and activate it. 
+2. 	Install, if this hasn't been done yet, the WordPress Importer plugin and activate it. 
+3. 	Go to tools > import and import the XML file you see in the same folder as this document by 
+	choosing 'wordpress' in the links that apear on that page. 
+4. 	Go to the Contact form 7 plugin to check if both forms are imported
+5. 	Create a new page called 'register'. Make sure its only the word in all lower case. 
+	Copy the shortcode for the register form in here. You can find this in the Contact form 7 plugin. The ID's can change because of the import, but an example of this shortcode is: [contact-form-7 id="522" title="Register project"]
+6. 	Repeat this for the contact form. Call this page 'contact' in all lower case. 
+	Place here the shortcode of the form called 'contact form'.

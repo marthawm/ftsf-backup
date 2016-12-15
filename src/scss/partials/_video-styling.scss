@@ -1,0 +1,57 @@
+.black-overlay {
+    display: block;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+
+.click-video {
+    display: block;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;   
+    z-index:1002;
+    overflow: auto;
+}
+
+.play-icon {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 20px 45px;
+    border-color: transparent transparent transparent #FFF;
+    opacity: .8;
+    align-self: flex-end;
+    position: absolute;
+    margin: 10px 45%;
+    left: 0;
+
+    @media screen and (max-width: 480px) {
+      margin: -41% 45%;
+    }
+}
+
+
+.block-video {
+    max-height: none;
+    max-width: none;
+    object-fit:cover;
+}
+
+.video-mobile-div{
+    height: 100%;
+    width: 100%;
+    .block-video-mobile {
+        width: 100%;
+        height: 100%;
+    }    
+}

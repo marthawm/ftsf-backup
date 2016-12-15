@@ -1,0 +1,2 @@
+1. For register-project form, the addition of the form does not reflect on GIT, so the team decided to make an export for the admin of which will include the form.
+2. For the register-project form, the functionality could not be tested because the development was being done on a local-server (localhost), inorder to test the functionality of the form, it will be tested once the project is online.

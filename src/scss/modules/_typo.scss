@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,300italic,400,400italic,500,700,800,800italic,900);
+
+.mobile-title-grid {
+	color: white;
+	text-align: center;
+	border-bottom: 1px solid white;
+	text-transform: uppercase;
+	font-size: 13px;
+    padding: 0px 3px;
+    margin: 0px 15px;
+} 
+
+.subtitle-mobile-grid {
+    color: #fff;
+    font-style: italic;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.quote-mobile-grid {
+	color: #fff;
+    font-style: italic;
+    font-size: 18px;	
+}
+
+.main-container{
+	font-family: 'Raleway', sans-serif;
+}
+
+/* css for the title */
+.grid-container{
+	text-align: center;
+
+	.title{
+	color: white;
+	font-size: 35px;/*
+	text-align: center;*/
+	padding: 0 10px;
+	border-bottom: 1px solid white;
+	margin: 5px;
+	}
+
+
+	/* css for the subtitle */
+	.subtitle{
+		color: white;
+		font-style: italic;
+		/*text-align: center;*/
+		margin: 5px;
+		padding: 0;
+	}
+
+	/* css for the quote */
+	.quote{
+		color: white;
+		font-size: 30px;
+		font-style: italic;
+		padding: 0 10%;/*
+		text-align: center;*/
+		font-weight: 500;
+		word-break: break-all;
+
+		/* this code adds a line underneath the text
+		padding: 0 10px;
+		border-bottom: 1px solid white;*/
+
+
+		&:before, &:after {
+			content: "\"";
+			display: inline-block;
+			vertical-align: text-top;
+			padding: 0 1px;
+		}
+	}
+}
+
+
+/* font-size for the text in the blocks on the admin side */
+.grid-section-manager{
+	.title, .quote{
+		font-size: 15px;
+	}
+	.subtitle{
+		font-size: 12px;
+	}
+}
+
+/* the different classes for the font-weight, these classes should be activated by selecting them in the blog page*/
+.regular{
+	font-weight:  400;
+}
+
+.medium{
+	font-weight: 500;
+}
+
+.bold{
+	font-weight: 700;
+}
+
+.extra-bold{
+	font-weight: 800;
+}
+
+.extra-bold-italic{
+	font-weight: 800;
+	font-style:  italic;
+}
+
+.black{
+	font-weight: 900;
+}
+
+/* title for the pages*/
+.block-page-title {
+	font-weight: 800;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 40px;
+	border-bottom: 1px solid#333;
+	margin: 5% 35%;
+	@media all and (max-width: 480px) {
+		margin: 14% 20% 8%;
+    	font-size: 20px;
+	}
+}
+
+

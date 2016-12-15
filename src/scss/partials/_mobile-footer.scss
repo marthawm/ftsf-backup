@@ -1,0 +1,22 @@
+.mobile-footer {
+	width: 100%;
+	height: 50px;
+	background: $groenemannen-green; 
+}
+
+.mobile-ftsf-logo {
+	height: 40px;
+	padding: 5px 0 0 30px;
+}
+
+.icons-container {
+	float: right;
+	padding: 12px 25px 0 0;
+	.mobile-icon-link {
+		text-decoration: none;
+	}
+	.mobile-icon-image {
+		height: 28px;	
+	}	
+}
+

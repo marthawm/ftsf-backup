@@ -1,0 +1,199 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic);
+
+$Red-Color: #F56462;
+$Green-Color: #75C398;
+
+
+.sidenav, .project-sidenav {
+  position: fixed;
+  height: 100vh;
+  z-index: 121;
+  top: 0;
+  left: 200px;
+  background-color: $Red-Color;
+  transition: 0.6s;
+
+  @media screen and (max-width: 500px) {
+      left: 0;
+  } 
+ 
+  &::before{
+    content: "";
+    position: absolute;
+    margin: 23px 0 0 -40px;
+    border-width: 13px 20px 13px;
+    border-style: solid;
+    border-color: transparent $Red-Color transparent transparent;
+   }
+
+   &.open {
+      width: 325px;
+      overflow-x: visible;
+      .contact-section { 
+          opacity: 1;
+          transition: opacity 0.7s 0.3s linear;
+      }
+      @media screen and (max-width: 500px) {
+        width: 100%;
+      } 
+   }
+   &.close {
+      width: 0px;
+      overflow-x: hidden;
+      .contact-section { 
+          opacity: 0;
+          transition: opacity 0.7s linear;
+      }
+   }
+ }
+
+ //This inline style is added to fix a bug on the menu.
+ .open > div[style] { 
+    display: block !important;
+ }
+
+.contact-message {
+  padding: 7px 0 0 0;
+}
+
+
+.sidenav a {
+  padding-top: 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+  color: #f1f1f1;
+}
+
+.mySidenav {
+  width: 0px;
+}
+
+.contact-section {
+  margin-left:auto;
+  margin-right:auto;
+  height:auto;
+  width:320px;
+  opacity: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.mySidenav {
+  width:300px;
+}
+
+.contact-title {
+  text-transform: uppercase;
+  font-size: 22px;
+  padding-bottom: 40px;
+  text-align: center;
+  color: white;
+  margin-right: 10%;
+}
+
+.contact-text {
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+
+
+.contact-content {
+  color: #1a1a1a;
+  font-family: 'Roboto', sans-serif;
+  border-width: 2px;
+  padding: 30px 0 30px 25px;
+  width: 295px;
+  transition: all 0.6s;
+  overflow-x: hidden;
+}
+
+  .nav-input, .NAV-INPUT {
+    text-indent: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 900;
+    width: 90%;
+    height: 35px;
+    // padding: 12px,20px;
+    border: 1px solid white;
+    background-color: white;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    margin-bottom: 13px;
+  }
+
+  textarea {
+    text-indent: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 900;
+    width: 90%;
+    height: 120px;
+    border: 1px solid white;
+    background-color: white;
+    margin-bottom: 20px;
+    resize: none;
+    padding-top:10px;
+  }
+
+  input[type=submit] {
+    width: 90%;
+    height: 40px;
+    border: 1px solid $Green-Color;
+    background-color: #1a1a1a;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    background-color: $Green-Color;
+    font-family: 'Roboto', sans-serif;
+    width: 92%;
+    margin-top: 10px;
+  }
+
+  
+  .input-placeholder {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: bold;
+  }
+
+
+.input {
+  padding-left: 20px;
+  width: 20%;
+  color: white;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px !important;
+  margin-left: 50px;
+  padding-top: 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+
+#main {
+  transition: margin-right .01s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}

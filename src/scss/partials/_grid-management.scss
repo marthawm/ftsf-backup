@@ -1,0 +1,47 @@
+/* css for the grid-management page*/
+#grid-manager{
+	margin-right: 40px;
+}
+
+.grid-manager-title{
+	width: 100%;
+	height: 80px;
+	background-color: $blog-grey;
+
+	h1{
+		padding: 15px 0 0 0;
+	}
+
+}
+
+.select-page{
+	width: 100%;
+	margin: 10px 20px 10px 0;
+	border-width: 2px;
+	display: block;
+}
+.select-pattern{
+	width: 100%;
+	margin: 10px 20px 10px 0;
+	border-width: 2px;
+	display: block;
+
+}
+
+.save-settings{
+	margin: 20px 10px 0px 0px;
+	display: inline-block;
+
+}
+
+.alert-message{
+		color: #f56462;
+		line-height: 30px;
+		margin-left: 20px;
+		font-weight: 800;
+		font-size: 15px;
+	}
+
+.hidden-div{
+	display: none;
+}

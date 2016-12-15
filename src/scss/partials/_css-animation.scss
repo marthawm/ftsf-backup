@@ -1,0 +1,34 @@
+.block {
+    &:hover{
+        .strike {
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                background-color: inherit;
+                top: 50%;
+                left: 0%;
+                width: 100%;
+                height: 4px;
+                opacity: 1;
+                animation-name: strike-through;
+                animation-duration: 2s;
+                animation-timing-function: linear;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+}
+@keyframes strike-through {
+    0% {
+        width: 0;
+        height:4px
+    }
+
+    100% {
+        width: 100%;
+        height:4px
+    }
+}

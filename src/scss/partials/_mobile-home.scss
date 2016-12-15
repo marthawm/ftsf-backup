@@ -1,0 +1,20 @@
+.mobile-home {
+	height: auto;
+	width: 100%;
+	.mobile-nav {
+		width: 80px;
+		margin: 0 auto;
+		.mobile-logo {
+			width: inherit;
+			margin-top: 15px;
+		}	
+	}
+	.mobile-home-container {
+		height: auto;
+		width: 100%;
+		margin-top: 140px;
+		.mobile-background-image {
+		    max-width: 100%;	
+		}
+	}
+}

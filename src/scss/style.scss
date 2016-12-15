@@ -1,0 +1,63 @@
+// Mixins
+// @import 'mixins/';
+
+// Modules
+@import 'modules/_typo.scss';
+@import 'modules/_colors.scss';
+// Partials
+@import 'partials/_wordpress.scss';
+@import 'partials/_grid.scss';
+@import	'partials/_contact.scss';
+@import	'partials/_css-animation.scss';
+@import 'partials/_hamburger-menu.scss';
+@import	'partials/_footer.scss';
+@import	'partials/_grid-management.scss';
+@import	'partials/_add-page.scss';
+@import 'partials/_video-styling.scss';
+@import 'partials/_page-styling.scss';
+@import 'partials/_pop-up.scss';
+@import 'partials/_newsletter.scss';
+@import 'partials/_pop-up';
+@import 'partials/_home.scss';
+@import 'partials/_registerproject.scss';
+@import 'partials/_blog-overview.scss';
+@import 'partials/_mobile-grid.scss';
+@import 'partials/_mobile-footer.scss';
+@import 'partials/_mobile-home.scss';
+
+@import '_normalize.scss';
+
+// Pages
+// @import 'pages/';
+
+
+// TODO move SASS to file in folder
+
+*{
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+.main-container {
+	width: calc(100vw + 10000px);
+}
+
+.home {
+	width: 100vw;
+	height: 100vh;
+	background: white;
+	float:left;
+}
+
+.container-triangle {
+ 	position: relative;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 200px 200px 0 0;
+	border-color: #999999 transparent transparent transparent;
+	position:relative;
+}

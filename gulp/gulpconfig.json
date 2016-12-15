@@ -1,0 +1,15 @@
+{
+	"sass" : {
+		"source": "./src/scss/**/**.scss",
+		"destination": "./src/css/"
+	},
+    "concatCss" : {
+        "source": "./src/css/**.css",
+        "concatTo": "ftsf.css",
+        "destination": "./wordpress/wp-content/themes/ftsf/css/"
+    },
+    "minifyCss" : {
+        "source": "./wordpress/wp-content/themes/ftsf/css/ftsf.css",
+		"destination": "./wordpress/wp-content/themes/ftsf/css/"
+    }
+}

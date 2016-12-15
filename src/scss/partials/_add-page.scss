@@ -1,0 +1,48 @@
+input#subtitle, input#quote {
+    padding: 3px 8px;
+   font-size: 1.2em;
+   line-height: 100%;
+   height: 1.7em;
+   width: 100%;
+   outline: 0;
+   margin: 5px 0;
+   border: 1px solid #eee;
+}
+
+.checkbox-title, .font-weight, .grid-color-dropdown, .add-media-box{
+    padding: 10px 0;
+}
+
+select, #example-text, .example-box{
+    margin-left: 10px;
+}
+
+.media-text{
+	line-height: 27px;
+	margin-right: 10px;
+}
+
+#wp-content-editor-tools {
+    background: transparent;
+    line-height: 27px;
+    margin-right: 10px;
+}
+
+.example-box{
+   margin-top: 2px;
+   height: 25px;
+   width: 50px;
+   display: inline-block;
+   position: absolute;
+}
+
+#example-text {
+    font-family: 'Raleway', sans-serif;
+}
+
+.bg-color-warning {
+  margin-left:0;
+  font-size: 14px;
+  line-height: initial;
+}
+

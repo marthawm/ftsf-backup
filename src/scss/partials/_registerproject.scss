@@ -1,0 +1,211 @@
+// @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic);
+
+// $Red-Color: #F56462;
+// $Green-Color: #75C398;
+
+// .register-project{
+
+// }
+
+// .project-sidenav {
+//     position: fixed;
+//     height: 100vh;
+//     width: 0;
+//     background: #F56462;
+//     top: 0;
+//     left: 200px;
+//     transition: .6s;
+//     z-index: 121;
+//     overflow-x: hidden;
+
+//     p {
+//         color: white;
+//         margin: 25px 143px 0;
+//     }
+
+//     a {
+//           padding-top: 10px;
+//           text-decoration: none;
+//           font-size: 25px;
+//           color: white;
+//     }
+
+//     &:before{
+//     content: "";
+//     position: absolute;
+//     margin: 23px 0 0 -40px;
+//     border-width: 13px 20px 13px;
+//     border-style: solid;
+//     border-color: transparent $Red-Color transparent transparent;
+//    }
+// }
+
+
+
+// .registerproject-sidenav {
+//   position: fixed;
+//   height: 100vh;
+//   width: 0;
+//   z-index: 121;
+//   top: 0;
+//   left: 200px;
+//   background-color: $Red-Color;
+//   overflow-x: hidden;
+//   transition: 0.6s;
+  
+//   &:before{
+//     content: "";
+//     position: absolute;
+//     margin: 23px 0 0 -40px;
+//     border-width: 13px 20px 13px;
+//     border-style: solid;
+//     border-color: transparent $Red-Color transparent transparent;
+//    }
+//  }
+
+// .registerproject-message {
+//   padding: 7px 0 0 0;
+// }
+
+
+// .registerproject-sidenav a {
+//   padding-top: 10px;
+//   text-decoration: none;
+//   font-size: 25px;
+//   color: white;
+// }
+
+// .registerproject-sidenav a:hover, .offcanvas a:focus {
+//   color: #f1f1f1;
+// }
+
+// .mySidenav {
+//   width: 0px;
+// }
+
+// .registerproject-section {
+//   margin-left:auto;
+//   margin-right:auto;
+//   height:auto;
+//   width:320px;
+// }
+
+// p {
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .mySidenav {
+//   width:300px;
+// }
+
+// .registerproject-title {
+//   text-transform: uppercase;
+//   font-size: 22px;
+//   padding-bottom: 40px;
+//   text-align: center;
+//   color: white;
+//   margin-right: 10%;
+// }
+
+// .registerproject-text {
+//   font-size: 13px;
+//   padding-bottom: 20px;
+// }
+
+
+// .registerproject-content {
+//   color: #1a1a1a;
+//   font-family: 'Roboto', sans-serif;
+//   border-width: 2px;
+//   padding: 30px 0 30px 25px;
+//   width: 295px;
+//   transition: all 0.6s;
+//   overflow-x: hidden;
+// }
+
+// ======================
+// label {
+//   text-transform: uppercase;
+//   font-size: 14px;
+//   font-weight: bold;
+//  }
+// =======================
+
+//   .nav-input {
+//     text-indent: 10px;
+//     text-transform: uppercase;
+//     font-size: 15px;
+//     font-weight: bold;
+//     width: 90%;
+//     height: 35px;
+//     padding: 12px,20px;
+//     border: 1px solid white;
+//     background-color: white;
+//     padding-bottom: 3px;
+//     padding-left: 4px;
+//     margin-bottom: 13px;
+//   }
+
+//   textarea {
+//     text-indent: 10px;
+//     text-transform: uppercase;
+//     font-size: 15px;
+//     font-weight: bold;
+//     width: 90%;
+//     height: 120px;
+//     border: 1px solid white;
+//     background-color: white;
+//     margin-bottom: 20px;
+//     resize: none;
+//   }
+
+//   input[type=submit] {
+//     width: 90%;
+//     height: 40px;
+//     border: 1px solid $Green-Color;
+//     background-color: #1a1a1a;
+//     text-transform: uppercase;
+//     font-size: 15px;
+//     color: white;
+//     background-color: $Green-Color;
+//     font-family: 'Roboto', sans-serif;
+//   }
+
+  
+//   .input-placeholder {
+//       text-transform: uppercase;
+//       font-size: 14px;
+//       font-weight: bold;
+//   }
+
+
+// .input {
+//   padding-left: 20px;
+//   width: 20%;
+//   color: white;
+// }
+
+// .closebtn {
+//   position: absolute;
+//   top: 0;
+//   right: 25px;
+//   font-size: 36px !important;
+//   margin-left: 50px;
+// }
+
+// #main {
+//   transition: margin-right .01s;
+//   padding: 16px;
+// }
+
+// @media screen and (max-height: 450px) {
+//   .registerproject-sidenav {
+//     padding-top: 15px;
+//   }
+
+//   .registerproject-sidenav a {
+//     font-size: 18px;
+//   }
+// }
+

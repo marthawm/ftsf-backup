@@ -1,0 +1,72 @@
+
+
+.newsletter-block {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 20;
+  top: 0;
+  color: #000;
+
+  .newsletter-container{    
+    background-color: #01c3e6;
+    width: 500px;
+    height: 220px;
+    margin: 10% auto;
+    padding: 30px 30px 35px;
+
+    p{
+      text-align: center;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 25px;
+      margin: 10px 0 15px;
+    }
+    
+    form{
+      margin: 0 auto;
+      width: 300px;
+      text-transform: uppercase;
+      input{
+        width: 267px;
+        border: solid 1px;
+        margin: 5px 0 10px;
+        padding: 1px 6px;
+        outline: none;
+        
+
+      }
+    }
+    .pitch{
+      display: block;
+      font-weight: 300;
+    }
+    .name-input{
+      margin-bottom: 25px;
+    }
+
+    .btn-newsletter{
+      width: 180px;
+      height: 30px;
+      margin: 20px 55px;
+      position: fixed;
+      border: 1px solid $risingsun-red;
+      background-color: $risingsun-red;
+      text-transform: uppercase;
+      font-size: 15px;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .close-newsletter {
+      float: right;
+      background: none;
+      border: none;
+      margin: -20px -15px 0 0;
+      font-size: 20px;
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.logo {
+	top: 0;
+	width: 128px;
+	right: 45%;
+	margin: 0 auto;
+	position: absolute;
+}
+
+.home-image {
+	width: 100%;
+	bottom: 0%;
+	position: absolute;
+
+
+	.home-display {
+		max-width: 75%;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+	}
+}
+@media all and (max-width: 600px) {
+		.logo {
+			right: 32.223%;
+			top: 5%;
+    		width: 128px;
+    		margin: 0 auto;
+    		position: absolute;
+
+    		
+		}
+		
+		.home-image {
+			width: 100%;
+			margin-bottom: 0%;
+			position: absolute;
+
+			.home-display{
+				max-width: 100%;
+				height: auto;
+				display: block;
+				margin: 0 auto;
+				
+			}
+	}
+}
+@media screen\0{	
+	.logo {
+			right: 20%;
+			top: 5%;
+    		width: 128px;
+    		margin: 0 auto;
+    		position: absolute;
+    		}
+    		}
+ @media (min-width: 600px) {
+ 	.logo {
+			right: 45%;
+   }
+}
+

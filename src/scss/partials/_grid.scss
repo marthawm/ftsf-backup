@@ -1,0 +1,249 @@
+@mixin calc-width-height($item-height, $section-height, $total-width) {
+	width: calc(#{$item-height / 810 * $section-height * ($total-width / $item-height)}); 
+	height: calc(#{$item-height / 810 * $section-height}); 
+}
+
+$admin-grid-height: 250px;
+
+.block{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+	overflow: hidden;
+    box-sizing: border-box;
+
+    /* code for scaling a background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+	cursor: pointer;
+}
+
+/*  GRID SECTION HOME-PAGE*/
+.grid-section {
+	height: 100vh;
+	float: left;
+	display: flex;
+
+	.grid-container {
+		float: left;
+
+		.grid-wrap-1 {
+			display: flex;
+			flex-flow: column wrap;
+			@include calc-width-height(422, 100vh, 1453);
+		  
+		  	.grid-item-1 {
+				@include calc-width-height(422, 100vh, 690);
+				background-color:#00C3E5;
+			}
+
+			.grid-item-2 {
+				@include calc-width-height(211, 100vh, 764);
+				background-color:#75C398;
+			}
+
+			.grid-item-3 {
+				@include calc-width-height(211, 100vh, 764);
+				background-color:#F56462;
+			}
+		}
+
+		.grid-wrap-2 {
+			display: flex;
+			flex-flow: column wrap;
+			@include calc-width-height(388, 100vh, 1453);
+		  
+
+		  	.grid-item-4 {
+				@include calc-width-height(388, 100vh, 391);
+				background-color:#F56462;
+			}
+
+			.grid-item-5 {
+				@include calc-width-height(388, 100vh, 689);
+				background-color:#00C3E5;
+			}
+
+			.grid-item-6 {
+				@include calc-width-height(388, 100vh, 374);
+				background-color:#75C398;
+			}
+		}
+
+		.grid-wrap-3 {
+			display: flex;
+			flex-flow: column wrap;
+			@include calc-width-height(810, 100vh, 763);
+		  
+
+		  	.grid-item-7 {
+				@include calc-width-height(603, 100vh, 763);
+				background-color:#75C398;
+			}
+
+			.grid-item-8 {
+				@include calc-width-height(207, 100vh, 763);
+				background-color:#00C3E5;
+			}
+		}
+
+		.grid-wrap-4 {
+			display: flex;
+			flex-flow: column wrap;
+			@include calc-width-height(422, 100vh, 1126);
+		  
+
+		  	.grid-item-9 {
+				@include calc-width-height(422, 100vh, 681);
+				background-color:#F56462;
+			}
+
+			.grid-item-10 {
+				@include calc-width-height(422, 100vh, 446);
+				background-color:#00C3E5;
+			}
+		}
+
+		.grid-wrap-5 {
+		 	display: flex;
+			flex-flow: column wrap;
+			@include calc-width-height(388, 100vh, 1126);
+
+			.grid-item-11 {
+				@include calc-width-height(388, 100vh, 498);
+				background-color:#00C3E5;
+			}
+
+			.grid-item-12 {
+				@include calc-width-height(388, 100vh, 629);
+				background-color:#F56462;
+			}
+		}
+	}
+}
+
+/*  GRID SECTION PLUGIN*/
+.grid-section-manager {
+	width: 100%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	margin: 10px 0;
+	display: flex;
+	margin-right: 20px;
+
+
+	.grid-section{
+		height: $admin-grid-height;
+	}
+
+	.grid-container {
+		float: left;
+
+		.grid-wrap-1 {
+			display: flex;
+			flex-flow: column wrap;
+			@include calc-width-height(422, $admin-grid-height, 1454);
+		  
+		  	.grid-item-1 {
+				@include calc-width-height(422, $admin-grid-height, 690);
+				background-color:#00C3E5;
+			}
+
+			.grid-item-2 {
+				@include calc-width-height(211, $admin-grid-height, 764);
+				background-color:#75C398;
+			}
+
+			.grid-item-3 {
+				@include calc-width-height(211, $admin-grid-height, 764);
+				background-color:#F56462;
+			}
+		}
+
+		.grid-wrap-2 {
+			display: flex;
+			flex-flow: column wrap;
+			@include calc-width-height(388, $admin-grid-height, 1454);
+		  
+
+		  	.grid-item-4 {
+				@include calc-width-height(388, $admin-grid-height, 391);
+				background-color:#F56462;
+			}
+
+			.grid-item-5 {
+				@include calc-width-height(388, $admin-grid-height, 689);
+				background-color:#75C398;
+			}
+
+			.grid-item-6 {
+				@include calc-width-height(388, $admin-grid-height, 374);
+				background-color:#00C3E5;
+			}
+		}
+
+		.grid-wrap-3 {
+			display: flex;
+			flex-flow: column wrap;
+			@include calc-width-height(810, $admin-grid-height, 763);
+		  
+
+		  	.grid-item-7 {
+				@include calc-width-height(603, $admin-grid-height, 763);
+				background-color:#F56462;
+			}
+
+			.grid-item-8 {
+				@include calc-width-height(207, $admin-grid-height, 763);
+				background-color:#00C3E5;
+			}
+		}
+
+		.grid-wrap-4 {
+			display: flex;
+			flex-flow: column wrap;
+			@include calc-width-height(422, $admin-grid-height, 1126);
+		  
+
+		  	.grid-item-9 {
+				@include calc-width-height(422, $admin-grid-height, 681);
+				background-color:#75C398;
+			}
+
+			.grid-item-10 {
+				@include calc-width-height(422, $admin-grid-height, 445);
+				background-color:#00C3E5;
+			}
+		}
+
+		.grid-wrap-5 {
+		 	display: flex;
+			flex-flow: column wrap;
+			@include calc-width-height(388, $admin-grid-height, 1126);
+
+			.grid-item-11 {
+				@include calc-width-height(388, $admin-grid-height, 498);
+				background-color:#F56462;
+			}
+
+			.grid-item-12 {
+				@include calc-width-height(388, $admin-grid-height, 629);
+				background-color:#00C3E5;
+			}
+		}
+	}
+}
+
+.content-block {
+	display: none;
+	width: 0;
+	transition: width 1s ease-in;
+	padding-bottom: 30px;
+}
+
+
+
+
+

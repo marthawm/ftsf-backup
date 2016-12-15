@@ -1,0 +1,130 @@
+.blog-overview-box {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-justify-content: center;
+	justify-content: center;
+	align-self: center;
+	flex-wrap: wrap;
+}
+
+.blog-item {
+	margin: 10px;
+	padding: 13px;
+	width: 224px;
+	height: 224px;	
+	border: 1px solid $blog-grey;
+	&:hover {
+		-webkit-box-shadow: 6px 6px 20px 0px rgba(125,125,125,0.5);
+		-moz-box-shadow: 6px 6px 20px 0px rgba(125,125,125,0.5);
+		box-shadow: 6px 6px 20px 0px rgba(125,125,125,0.5);
+		transition: all linear 0.3s;
+	}		
+}
+
+.blog-overlay {
+	width: 224px;
+	height: 200px;
+	.blog-title {
+		padding-top: 85px;
+		font-weight: 800;
+	}
+	.blog-author {
+		font-weight: 300;
+	}
+}
+
+.blog-title,
+.blog-author {
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	color: $white;
+	text-transform: uppercase;
+}
+
+.blog-social-wrap {
+	margin: 10px 0 0 3px;
+}
+
+.blog-comment-image,
+.blog-favorite-image {
+	height: 17px;
+}
+
+.blog-comment-link,
+.blog-favorite-link,
+.blog-item-link {
+	text-decoration: none;
+}
+
+
+.blog-comment-number,
+.blog-favorite-number {
+	font-size: 13px;
+	color: $blog-grey;
+	vertical-align: text-top;
+	font-weight: 500;
+}
+
+.blog-favorite-image {
+	margin-left: 10px;
+}
+
+.blog-footer {
+	width: 93%;
+	margin: 15px auto 0;
+	height: 50px;
+	@media screen and (max-width: 920px) {
+		margin: 20px auto 20px;
+		height: auto;
+	}
+}
+
+.blog-page-numbers {
+	width: auto;
+	float: left;
+	@media screen and (max-width: 920px) {
+		float: none;
+		text-align: center;
+	}
+	.page-numbering {
+		border: 1px solid #c2c2c2;
+		font-size: 16px;
+		color: $risingsun-red;
+		padding: 2px 8px;
+		margin-right: 8px;
+	}
+}
+
+.smaller {
+	border: 1px solid #c2c2c2;
+	font-size: 16px;
+	color: $risingsun-red;
+	padding: 2px 8px;
+	margin-right: 8px;	
+	text-decoration: none;
+}
+
+.blog-search {
+	float: right;
+	margin-top: -2px;
+	@media screen and (max-width: 920px) {
+		float: none;
+		text-align: center;
+		margin-top: 15px;
+	}	
+	.blog-search-field {
+	    background-image: url("../images/searchicon.png");
+	    background-position: 3px 3px;
+	    background-repeat: no-repeat;
+	    background-size: 15px 15px;
+	    padding: 3px 25px;	
+	    border: 1px solid $blog-grey;  
+	    font-size: 14px; 	
+		@media screen and (max-width: 480px) {
+			padding: 3px 40px;	
+		}		    
+	}
+}
